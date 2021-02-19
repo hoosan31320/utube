@@ -62,3 +62,18 @@ https://hanbi97.tistory.com/20 webpack- Youtube Clone Coding - Webpack
 https://brunch.co.kr/@topherlee/87 웹팩 설정하기
 https://www.zerocho.com/category/Webpack/post/58ac2d6f2e437800181c1657 mini-css-extract-plugin 웹팩5로 CSS와 기타 파일 번들링
 https://webpack.js.org/loaders/postcss-loader/ postcss-loader | webpack
+
+<facebook login>
+https://kibua20.tistory.com/150 ngrok 설치
+ngrok(ho깃헙인증으로 로그인했음-localhost:4040에서 status 확인가능) 으로 https 생성해야 함(facebook은 https가 있어서 등록됌) - 80 port 사용했음.
+계속 Fail in serialize user into Session 나오는데 아마도, email을 페이스북에서 아직 public으로 열어주지 않아서 그런듯.
+추후에 다시 확인해 보기로 함.
+
+**해결해야될 문제점**
+
+1. <githup login>
+   passport로 이미 id, email 만든 경우 - 같은 email로 github 로그인시 githubId는 추가로 DB에 잘 저장하나, avatarUrl은 추가로 DB에 저장 못함.
+2. github에서 가져온 이미지 경로는 useDetail 화면에서 표시않돼고 깨짐.
+3. 질문 : videoController에서는 \_id를 3회를 사용했으나,
+   userController에서는 1회도 않씀.
+   videoController 안에서도 쓰는 경우와 않쓰는 경우의 차이점.
