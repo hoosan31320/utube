@@ -72,8 +72,10 @@ ngrok(ho깃헙인증으로 로그인했음-localhost:4040에서 status 확인가
 **해결해야될 문제점**
 
 1. <githup login>
-   passport로 이미 id, email 만든 경우 - 같은 email로 github 로그인시 githubId는 추가로 DB에 잘 저장하나, avatarUrl은 추가로 DB에 저장 못함.
+   passport로 이미 id, email 만든 경우 - 같은 email로 github 로그인시 githubId는 추가로 DB에 잘 저장하나, avatarUrl은 추가로 DB에 저장 못함(다른 clone도 못가져오는것 확인했음.)
 2. github에서 가져온 이미지 경로는 useDetail 화면에서 표시않돼고 깨짐.
 3. 질문 : videoController에서는 \_id를 3회를 사용했으나,
    userController에서는 1회도 않씀.
    videoController 안에서도 쓰는 경우와 않쓰는 경우의 차이점.
+4. 질문 : userRouter 안의 Router의 순서를 바꾸자 에러가 났다. 내용은 똑같은데 이유를 알 수가 없다.
+   (Edit Profile 과 Change Password 에서 그렇다.)
