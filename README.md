@@ -79,3 +79,4 @@ ngrok(ho깃헙인증으로 로그인했음-localhost:4040에서 status 확인가
    videoController 안에서도 쓰는 경우와 않쓰는 경우의 차이점.
 4. 질문 : userRouter 안의 Router의 순서를 바꾸자 에러가 났다. 내용은 똑같은데 이유를 알 수가 없다.
    (Edit Profile 과 Change Password 에서 그렇다.)
+5. /me 화면(Profile)에서 내가 올린 동영상이 제대로 표시 않돼고 있다.
