@@ -85,8 +85,8 @@ export const facebookLoginCallback = async (_, __, profile, cb) => {
             factbookId: id,
             avatarUrl: `https://graph.facebook.com/${id}/picture?type=large`
         });
-        console.log(profile);
-        console.log(newUser);
+        // console.log(profile);
+        // console.log(newUser);
         return cb(null, newUser);
     } catch (error) {
         return cb(error);
