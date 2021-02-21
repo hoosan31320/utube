@@ -86,7 +86,19 @@ ngrok(ho깃헙인증으로 로그인했음-localhost:4040에서 status 확인가
    if (videoPlayer.muted) {
    videoPlayer.muted = false;
    이해 못하고 있음.
-7. git error
+7. videoPlayer.scss 에서 가상요소선택자 ::-webkit-slider-thumb 작동돼지 않고 있음.
+
+Replace Autoprefixer browsers option to Browserslist config.
+Use browserslist key in package.json or .browserslistrc file.
+
+Using browsers option can cause errors. Browserslist config can
+be used for Babel, Autoprefixer, postcss-normalize and other tools.
+
+If you really need to use option, rename it to overrideBrowserslist.
+
+Learn more at:
+https://github.com/browserslist/browserslist#readme
+https://twitter.com/browserslist
 
 **실수 노트**
 input 태그에서 코마 쓰면 않돼는 경우 - videoPlayer.pug
