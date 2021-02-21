@@ -86,6 +86,7 @@ ngrok(ho깃헙인증으로 로그인했음-localhost:4040에서 status 확인가
    if (videoPlayer.muted) {
    videoPlayer.muted = false;
    이해 못하고 있음.
+7. git error
 
 **실수 노트**
 input 태그에서 코마 쓰면 않돼는 경우 - videoPlayer.pug
