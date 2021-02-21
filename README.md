@@ -80,3 +80,14 @@ ngrok(ho깃헙인증으로 로그인했음-localhost:4040에서 status 확인가
 4. 질문 : userRouter 안의 Router의 순서를 바꾸자 에러가 났다. 내용은 똑같은데 이유를 알 수가 없다.
    (Edit Profile 과 Change Password 에서 그렇다.)
 5. /me 화면(Profile)에서 내가 올린 동영상이 제대로 표시 않돼고 있다.
+6. videoPlayer.js에서 muted
+   비디오에 포함되어 있는 오디오의 기본 설정을 나타내는 부울 속성입니다. 설정하면 오디오가 나오지 않습니다. 기본 값은 false이며 이는 비디오가 재생되면 오디오도 같이 재생됨을 의미합니다.---
+   function handleVolumeClick() {
+   if (videoPlayer.muted) {
+   videoPlayer.muted = false;
+   이해 못하고 있음.
+
+**실수 노트**
+input 태그에서 코마 쓰면 않돼는 경우 - videoPlayer.pug
+input.videoPlayer**volume#jsVolume(type="range", min="0", max="1", value="0.5", step="0.1") -- 잘못됌
+input.videoPlayer**volume#jsVolume(type="range", min="0" max="1" value="0.5" step="0.1") -- OK
